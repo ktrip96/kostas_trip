@@ -23,9 +23,11 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center">
             {/* Social Icons */}
-            <SocialIcon url="https://www.github.com/_ktrip_/"  fgColor="gray" bgColor="transparent"/>
+            <SocialIcon url="https://github.com/ktrip96"  fgColor="gray" bgColor="transparent"/>
             <SocialIcon url="https://www.instagram.com/_ktrip_/"  fgColor="gray" bgColor="transparent"/>
-            <SocialIcon url="https://www.facebook.com/_ktrip_/"  fgColor="gray" bgColor="transparent"/>
+            <SocialIcon url="https://www.facebook.com/konstantinos.tripalitakis/"  fgColor="gray" bgColor="transparent"/>
+            <SocialIcon url="https://www.linkedin.com/in/kostas-tripalitakis-75159b1aa/"  fgColor="gray" bgColor="transparent"/>
+
         </motion.div>
 
         <motion.div
