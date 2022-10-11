@@ -28,10 +28,10 @@ function Hero({}: Props) {
         </h1>
 
         <div className="pt-5">
-        <Link href="#about"><button className='heroButton'>About</button></Link>
-        <Link href="#experience"><button className='heroButton'>Experience</button></Link>
-        <Link href="#skills"><button className='heroButton'>Skills</button></Link>
-        <Link href="#projects"><button className='heroButton'>Projects</button></Link>
+          <Link href="#about"><button className='heroButton'>About</button></Link>
+          <Link href="#experience"><button className='heroButton'>Experience</button></Link>
+          <Link href="#skills"><button className='heroButton'>Skills</button></Link>
+          <Link href="#projects"><button className='heroButton'>Projects</button></Link>
         </div>
         </div>
 
