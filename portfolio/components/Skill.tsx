@@ -14,12 +14,12 @@ function Skill({directionLeft, skill}: Props) {
     <div className="group relative flex cursor-pointer">
         <motion.img 
         initial={{
-            x:directionLeft? -200 : 200,
+            x:directionLeft? -100 : 100,
         }}
         transition={{duration:1}}
         whileInView={{opacity:1, x:0}}
         src={urlFor(skill.image).url()}
-        className="rounded-full border border-gray-500 object-contain w-18 h-18 md:w-20 md:h-20
+        className="rounded-full border border-gray-500 object-contain w-10 h-10 md:w-20 md:h-20
         xl:w-26 xl:h-26 filter group-hover:grayscale transition duration-300 ease-in-out "/>
 
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out
