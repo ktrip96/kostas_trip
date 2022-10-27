@@ -1,11 +1,15 @@
 import React from 'react'
 import {motion} from "framer-motion"
+import { Skill } from '../typings'
+import { urlFor } from '../sanity'
 
 type Props = {
     directionLeft?:boolean
+    skill:Skill
+
 }
 
-function Skill({directionLeft}: Props) {
+function Skill({directionLeft, skill}: Props) {
   return (
     <div className="group relative flex cursor-pointer">
         <motion.img 
@@ -14,15 +18,15 @@ function Skill({directionLeft}: Props) {
         }}
         transition={{duration:1}}
         whileInView={{opacity:1, x:0}}
-        src="https://media-exp1.licdn.com/dms/image/C4D03AQFSULrBGoRv_w/profile-displayphoto-shrink_200_200/0/1662323193638?e=1669248000&v=beta&t=8S-o91qrgRRvoMGVq4M3FZkNimLwsEYqIaabnb9ettY"
-        className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28
-        xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out "/>
+        src={urlFor(skill.image).url()}
+        className="rounded-full border border-gray-500 object-contain w-18 h-18 md:w-20 md:h-20
+        xl:w-26 xl:h-26 filter group-hover:grayscale transition duration-300 ease-in-out "/>
 
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out
-        group-hover:bg-white  rounded-full z-0 w-24 h-24 md:w-28 md:h-28
-        xl:w-32 xl:h-32 ">
+        group-hover:bg-white  rounded-full z-0 w-18 h-18 md:w-20 md:h-20
+        xl:w-26 xl:h-26 ">
             <div className='flex items-center justify-center h-full'>
-                <p className="text-base font-bold text-black opacity-100">React JS</p>
+                <p className="text-base font-bold text-black opacity-100">{skill.title}</p>
             </div>
         </div>
     </div>
