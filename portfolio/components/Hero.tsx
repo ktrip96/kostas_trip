@@ -21,10 +21,10 @@ function Hero({pageInfo}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
         <BackgroundCircles/>
         <img src={urlFor(pageInfo.heroImage).url()}
-        alt="profile_picture" className="relative rounded-full h-32 w-32  mx-auto object-cover"/>
+        alt="profile_picture" className="relative rounded-full h-40 w-40  mx-auto object-cover scale-150"/>
         <div className="z-20">
 
-        <h2 className="text-sm text-gray-500 pb-2 tracking-[15px] mb-2">{pageInfo?.role}</h2>
+        <h2 className="text-sm text-gray-500 pb-2 tracking-[15px] mb-2 mt-4">{pageInfo?.role}</h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
         <span>{text}</span>
         <Cursor cursorColor="#F7AB0A"/>

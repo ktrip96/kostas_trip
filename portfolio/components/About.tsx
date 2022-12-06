@@ -30,14 +30,13 @@ export default function About({pageInfo}: Props) {
             duration:1.2
         }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className=" mb-2 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-56 md:h-64 xl:w-80 xl:h-96  "
+        className=" mb-2 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-56 md:h-64 xl:w-96 xl:h-96   "
         /> 
         <div className="space-y-10 px-0 md:px-10  ">
             <h4 className="text-lg md:text-4xl font-semibold">
-                Here is a <span className="underline decoration-[#F7AB0A]/50">little</span> background
+                 <span className="underline decoration-[#F7AB0A]/50">Few words about me</span> 
             </h4>
-            <p className='text-sm md:text-base'>
-                {pageInfo?.backgroundInformation}
+            <p dangerouslySetInnerHTML={{__html: pageInfo?.backgroundInformation}}className='text-lg md:text-lg'>
             </p>
         </div>
 
