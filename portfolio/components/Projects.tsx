@@ -25,8 +25,8 @@ function Projects({projects}: Props) {
                     whileInView={{opacity:1, y:0}}
                     src={urlFor(project?.image).url()} alt="" 
                     className="w-[400px]"/>
-                    <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-                        <a className='text-4xl font-semibold text-center' href={project.linkToBuild} target="_blank" rel="noreferrer noopener">
+                    <div className='space-y-10 px-0 md:px-10 max-w-6xl text-center'>
+                        <a className='md:text-4xl text-xl  font-semibold text-center' href={project.linkToBuild} target="_blank" rel="noreferrer noopener">
                             <span className='underline decoration-[#F7AB0A]/50'>
                                 Case Study {i + 1} of {projects.length}:
                             </span>{" "}
@@ -44,7 +44,7 @@ function Projects({projects}: Props) {
                         ))}
                         </div>
 
-                        <p className="text-lg text-center w-[500px] md:text-left">
+                        <p className="md:text-lg text-sm text-center w-[500px] md:text-left ">
                        {project.summary}
                         </p>
                     </div>
